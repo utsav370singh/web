@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="m.css">
+    <style>
+ 
+        form {
+            background-position: center;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #009688;
+            border-radius: 5px;
+        }
+
+        input[type=text],
+        input[type=tel],
+        input[type=email],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        input[type=submit] {
+            background-color: tomato;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="logo.png" alt="" height="100" width="100"> 
+               <ul>
+                      <li class="item"><a href="main.html">Home</a></li>
+                      <li class="item"><a href="facalaties.html">Facalities</a></li>
+                      <li class="item"><a href="acadamics.html">Acadamics</a></li>
+                      <li class="item"><a href="fee.html">Pay fees online</a></li>
+                      <li class="item"><a href="about.html">About</a></li>
+                 </ul>
+             </div>
+      
+             <div class="right">
+              <ul>
+                <li class="item"><a href="login.html">login</a></li>
+              </ul>
+          </div>
+    </header>
+    <h2>PAYMENT FORM </h2>
+    <form>
+        <p><label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="jhon wick" required>
+        </p>
+
+        <p><label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="xxx xxx xxxx" required>
+        </p>
+
+        <p><label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="jhonwick276@gmail.com" required>
+        </p>
+
+        <p><label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" placeholder="----" required>
+        </p>
+
+        <p><label for="upi_id">UPI ID:</label>
+            <input type="text" id="upi_id" name="upi_id" placeholder="" required>
+        </p>
+
+        <p>
+            <label for="bank">Select Bank:</label>
+            <select id="bank" name="bank" required>
+                <option value="">--Please select--</option>
+                <option value="sbi">State Bank of India</option>
+                <option value="hdfc">HDFC Bank</option>
+                <option value="icici">ICICI Bank</option>
+                <option value="axis">Axis Bank</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+
+</html>
